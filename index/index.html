@@ -1,0 +1,235 @@
+   
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFFA TECH HOME</title>
+    
+   <!-- BOOTSTRAP CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+   <!-- My css -->
+   <link rel="stylesheet" href="style.css">
+
+   </head>
+
+     <body>
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AFFA TECH <br></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="  navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            <a class="nav-link" href="/abaout">Abaout</a>
+            <a class="nav-link" href="/Materi">Materi</a>
+             
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+      <!-- END NAVBAR SECTION -->
+
+      <!-- JUMBOTRON -->
+      <div>
+        <section class="jumbotron">
+          <h1 class="display-4">AFFA TECH</h1>
+          <p class="lead px-3">WEBSITE FOR SIMPLE LEARN.</p>
+        </section>
+      </div>
+      <!-- JUMBOTRON END -->
+
+      <!-- CONTENT -->
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Photo Slider</title>
+        <style>
+          body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+          }
+      
+          .slider-container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+          }
+      
+          .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+          }
+      
+          .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+          }
+      
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+      
+          .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border: none;
+            outline: none;
+            user-select: none;
+          }
+      
+          .prev {
+            left: 0;
+          }
+      
+          .next {
+            right: 0;
+          }
+        </style>
+      </head>
+      <body>
+      
+      <div class="slider-container">
+        <div class="slides">
+          <div class="slide"><img src="Grey and Yellow Barber Vintage Business Card.jpg" alt="Slide 1"></div>
+          <div class="slide"><img src="kimberly-farmer-lUaaKCUANVI-unsplash.jpg" alt="Slide 2"></div>
+          <div class="slide"><img src="ok.jpg" alt="Slide 3"></div>
+          <!-- Add more slides as needed -->
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+      
+      <script>
+        let currentIndex = 0;
+      
+        function showSlide(index) {
+          const slides = document.querySelector('.slides');
+          const slideWidth = document.querySelector('.slide').clientWidth;
+          currentIndex = index;
+      
+          slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+        }
+      
+        function prevSlide() {
+          currentIndex = (currentIndex - 1 + getTotalSlides()) % getTotalSlides();
+          showSlide(currentIndex);
+        }
+      
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % getTotalSlides();
+          showSlide(currentIndex);
+        }
+      
+        function getTotalSlides() {
+          return document.querySelectorAll('.slide').length;
+        }
+      </script>
+      
+      </body>
+      </html>
+      
+      <!-- CONTENT END -->
+
+      <h1> WEBSITE ini menampilkan materi belajar yang membuat simpel untuk di pelajari
+      </h1>
+      <br><br>
+      <P>NEXT UPDATE:</P>
+
+    <div class="all">
+      <div class="card" style="width: 18rem;">
+        <img src="tim-mossholder-WE_Kv_ZB1l0-unsplash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Membuat siswa lebih menarik dalam belajar dengan menambahkan beberapa design baru.</p>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="lilartsy-333oj7zFsdg-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">video pembahasan merupakan video asli guru riga.</p>
+          </div>
+        </div>
+      </div>
+<!-- CONTENT END -->
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KELOMPOK</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    footer {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Your page content goes here -->
+
+<footer id="colorFooter">
+  MAKASIH SEMUANYA - FAIRUZ,ARDIANSYAH.K,FEBRIAN,ARSHA
+</footer>
+
+<script>
+  function changeFooterColor() {
+    const footer = document.getElementById('colorFooter');
+    const colors = ['#e74c3c', '#2ecc71', '#f39c12', '#9b59b6', '#3498db', '#1abc9c'];
+
+    // Get a random color from the array
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+    // Apply the random color to the footer
+    footer.style.backgroundColor = randomColor;
+  }
+
+  // Change the footer color every 5 seconds (adjust as needed)
+  setInterval(changeFooterColor, 1000);
+</script>
+
+</body>
+</html>
+
+   </body>
+   </html>
+   
+
+
+
+
+
+   
+   
+   
+    
